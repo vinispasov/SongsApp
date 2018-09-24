@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.addnewsong.SongCreateFragment">
+
+    <EditText
+        android:id="@+id/et_new_song_title"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:inputType="text"
+        android:hint="@string/enter_song_title"/>
+
+    <EditText
+        android:id="@+id/et_new_author_name"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_new_song_title"
+        android:layout_centerHorizontal="true"
+        android:inputType="text"
+        android:hint="@string/enter_author_name"/>
+
+    <EditText
+        android:id="@+id/et_new_song_duration"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_new_author_name"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"
+        android:hint="@string/enter_song_duration"/>
+
+
+    <EditText
+        android:id="@+id/et_new_song_image_url"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_new_song_duration"
+        android:layout_centerHorizontal="true"
+        android:inputType="textUri"
+        android:hint="@string/enter_image_url"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_new_song_image_url"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/add_song" />
+
+    <ProgressBar
+        android:id="@+id/prb_load_bar_on_add_song"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

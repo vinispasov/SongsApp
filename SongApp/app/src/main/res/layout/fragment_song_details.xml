@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.songdetails.SongDetailsFragment">
+
+    <ImageView
+        android:id="@+id/song_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY" />
+
+    <ImageButton
+        android:id="@+id/ib_play_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/song_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:src="@drawable/ic_play_button" />
+
+    <TextView
+        android:id="@+id/tv_author_name_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ib_play_button"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/SongFieldTextSize" />
+
+    <TextView
+        android:id="@+id/tv_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_author_name_field"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/tv_song_title_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_author_name"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/SongFieldTextSize" />
+
+    <TextView
+        android:id="@+id/tv_song_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_song_title_field"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/tv_song_duration_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_song_title"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="10dp"
+        android:gravity="start"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/SongFieldTextSize" />
+
+    <TextView
+        android:id="@+id/tv_song_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_song_duration_field"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/tv_song_plays_count_field"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_image"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_toStartOf="@+id/tv_song_plays_count"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_song_plays_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/song_image"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/prb_load_view"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>
+
+
+

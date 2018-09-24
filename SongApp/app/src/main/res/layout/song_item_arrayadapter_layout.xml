@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_song_item_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+
+    <TextView
+        android:id="@+id/tv_song_item_author_name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_song_item_image"
+        android:gravity="start"
+        android:paddingEnd="@dimen/SmallPadding"
+        android:paddingStart="@dimen/SmallPadding"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/SongFieldTextSize" />
+
+    <TextView
+        android:id="@+id/tv_song_item_author_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_song_item_author_name_field"
+        android:layout_toEndOf="@id/iv_song_item_image"
+        android:gravity="start"
+        android:paddingEnd="@dimen/SmallPadding"
+        android:paddingStart="@dimen/SmallPadding"
+        android:textColor="@color/white"
+        android:textSize="@dimen/SmallText" />
+
+    <TextView
+        android:id="@+id/tv_song_item_title_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_song_item_author_name"
+        android:layout_toEndOf="@id/iv_song_item_image"
+        android:gravity="end"
+        android:paddingEnd="@dimen/SmallPadding"
+        android:paddingStart="@dimen/SmallPadding"
+        android:textColor="@color/primary"
+        android:textSize="@dimen/SongFieldTextSize" />
+
+    <TextView
+        android:id="@+id/tv_song_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_song_item_author_name"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/iv_song_item_image"
+        android:gravity="end"
+        android:paddingEnd="@dimen/SmallPadding"
+        android:paddingStart="@dimen/SmallPadding"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

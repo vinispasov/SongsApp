@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="SongFieldTextSize">18sp</dimen>
+    <dimen name="SmallText">20sp</dimen>
+    <dimen name="MediumText">22sp</dimen>
+    <dimen name="MediumMargin">20dp</dimen>
+    <dimen name="material_drawer_item_primary_text">18sp</dimen>
+    <dimen name="SmallPadding">10dp</dimen>
+    <dimen name="BigMargin">50dp</dimen>
+</resources>
